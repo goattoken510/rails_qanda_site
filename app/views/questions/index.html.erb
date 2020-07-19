@@ -14,10 +14,13 @@
                 <tr>
                     <td><%= quiestion.id %></td>
                     <td><%= quiestion.title %></td>
-                    <td>[Edit] [Delete]</td>
+                    <td>[ <%= link_to 'Edit', edit_question_path(quiestion) %> ] [Delete]</td>
                 </tr>
             <% end %>
             </tbody>
-        </table>  
+        </table>
+        <div>
+            <%= link_to 'New quiestion', new_question_path %>
+        </div>
     </div>
 </div>
